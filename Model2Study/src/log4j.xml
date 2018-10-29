@@ -23,7 +23,7 @@
 	
 	<!-- 개발 기간중 패키지별 로그 설정 -->
 	<logger name="kr.or.kosta"><!-- 하위 패키지까지 적용 -->
-		<level value="debug" />
+		<level value="warn" />
 	</logger>
 	
 	<!-- 3rdparty 로그레벨 설정 -->
