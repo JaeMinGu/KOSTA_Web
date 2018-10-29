@@ -4,10 +4,7 @@ import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 
-import kr.or.kosta.shoppingmall.common.dao.DaoFactory;
-import kr.or.kosta.shoppingmall.common.dao.JdbcDaoFactory;
-import kr.or.kosta.shoppingmall.common.service.ObjectFactory;
-import kr.or.kosta.shoppingmall.common.service.ServiceFactory;
+import kr.or.kosta.shoppingmall.common.factory.XMLObjectFactory;
 
 
 /**
@@ -31,7 +28,13 @@ public class ServletContextLoadListener implements ServletContextListener {
 //		ServiceFactory serviceFactory = new ServiceFactory(serviceMapperLocation);
 //		DaoFactory daoFactory = new JdbcDaoFactory(daoMapperLocation);
 		
-		ObjectFactory objectFactory = new ObjectFactory(objectMapperLocation);
+//		ObjectFactory objectFactory = new ObjectFactory(objectMapperLocation);
+		XMLObjectFactory objectFactory = null;
+		try {
+			objectFactory = new XMLObjectFactory(objectMapperLocation);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		
 		// 모든 서블릿, JSP들이 공유할 수 있도록 ServletContext에 DaoFactory 저장
 //		servletContext.setAttribute("serviceFactory", serviceFactory);

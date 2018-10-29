@@ -1,6 +1,5 @@
-<%@ page contentType="text/html; charset=EUC-KR"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>    
-
+<%@ page contentType="text/html; charset=utf-8" %>
+<%@ taglib prefix="c"  uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,13 +7,14 @@
 <title></title>
 </head>
 <body>
-<h2>¸Þ½ÃÁö : ${requestScope.message }</h2>
+<h2>ë©”ì‹œì§€ : ${requestScope.message }</h2>
 
-<h2>ÆÀ¸í</h2>
+<h2>íŒ€ëª…</h2>
 <ul>
-	<c:forEach var="team" items="${list }" >
-		<li>${team }</li>
-	</c:forEach>
+  <c:forEach var="team" items="${list}">
+    <li>${team }</li>
+  </c:forEach>
 </ul>
+
 </body>
 </html>

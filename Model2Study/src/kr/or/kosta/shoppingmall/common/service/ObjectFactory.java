@@ -128,7 +128,6 @@ public class ObjectFactory extends DaoFactory {
 		ObjectFactory factory = new ObjectFactory(mapperLocation);
 		UserService userService = (UserService) factory.getService(UserServiceImpl.class);
 		System.out.println(userService.list());
-
 	}
 
 }

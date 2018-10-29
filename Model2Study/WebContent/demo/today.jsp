@@ -1,6 +1,5 @@
-<%@ page contentType="text/html; charset=EUC-KR"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>    
-
+<%@ page contentType="text/html; charset=utf-8" %>
+<%@ taglib prefix="c"  uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,9 +7,6 @@
 <title></title>
 </head>
 <body>
-
-<h2>ÇöÀç½Ã°£ : ${today }</h2>
-
-
+<h2>í˜„ìž¬ì‹œê°„ : ${today }</h2>
 </body>
 </html>

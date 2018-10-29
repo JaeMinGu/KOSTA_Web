@@ -1,4 +1,4 @@
-<%@ page contentType="text/html; charset=EUC-KR"%>
+<%@ page contentType="text/html; charset=utf-8" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,6 +6,8 @@
 <title></title>
 </head>
 <body>
-<h2>Model2 ╠Б╧щ ю╔╬жгц╦╝диюл╪г ╟Ё╧ъ ╩Гюлф╝ют╢о╢ы...</h2>
+
+<h2>Model2 Й╦╟К╟≤ Л⌡╧Л∙═М■▄К╕╛Л╪─Л²╢Л┘≤ Й╟°К╟° Л┌╛Л²╢М┼╦ Л·┘К▀┬К▀╓..</h2>
+
 </body>
 </html>
