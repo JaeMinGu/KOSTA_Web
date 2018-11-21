@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+						http://www.springframework.org/schema/beans/spring-beans.xsd
+						http://www.springframework.org/schema/context 
+						http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+   <!-- Root Context: defines shared resources visible to all other web components -->
+   <!-- 메모리에 올리고자 하는 bean 등록하기 -->
+   <!-- 
+   <bean id="chef" class="kr.or.kosta.spring.sample.di.Chef">
+      <constructor-arg value="김기정"/>Chef의 이름
+   </bean>
+
+   <bean id="restaurant" class="kr.or.kosta.spring.sample.di.Restaurant" autowire="default">거의 대부분 byType 사용 
+      <property name="name" value="코스타레스토랑"/> 기본 타입은 'value'라는 속성을 사용 
+      <property name="chef" ref="chef"/> 객체는 'ref'라는 속성을 사용
+   </bean>
+   -->   
+   
+   <!-- Spring Annotation 사용을 위한 설정 -->
+   <context:component-scan base-package="kr.or.kosta.spring" />
+</beans>
